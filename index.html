@@ -5,13 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script defer src="index.js"></script>
 </head>
 
 <body>
+    <div class="calculation">
+			
+			    
 
+        <div class="mortgage-calculator">
+            <h2 class="white">Ипотечный калькулятор!</h2>
+            <form name="cl_form">
+                <div class="mortgage-calculator__conteiner">
+                    <div class="mortgage-calculator__price">
+                        <span>Стоимость недвижимости</span>
+                        <div class="mortgage-calculator__price-block">
+                            <span id="mortgage-calculator__price-value">
+                                7400000                            </span>
+                            <span class="mortgage-calculator__price-currency"> руб.</span>
+                        </div>
+                    </div>
+                    <div class="mortgage-calculator__rate">
+                        <label for="amount">Ставка, %</label>
+                        <input type="text" id="amount" onchange="calc(this.value);">
+                        <div id="slider-range-max" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-slider-range-max" style="width: 68.9655%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 31.0345%;"></a></div>
+                    </div>
+                    <div class="mortgage-calculator__initial-fee">
+                        <label for="amount2">Первоначальный взнос, руб</label>
+                        <input type="text" id="amount2" onchange="calc(this.value);">
+                        <div id="slider-range-max2" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-slider-range-max" style="width: 90%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 10%;"></a></div>
+                    </div>
+                    <div class="mortgage-calculator__credit-term">
+                        <label for="amount3">Срок кредита, лет</label>
+                        <input type="text" id="amount3" onchange="calc(this.value);">
+                        <div id="slider-range-max3" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-slider-range-max" style="width: 25.641%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 74.359%;"></a></div>
+                    </div>
+                    <div class="mortgage-calculator__monthly-payment">
+                                            <label for="summFinal">Ежемесячный платеж, руб</label>
+                        <input value="21075" id="summFinal" name="summFinal" readonly="readonly" maxlength="10" size="5" type="text">
+                    </div>
+                    <div class="mortgage-calculator__button">
+                        <div class="mortgage-calculator_submit pum-trigger" style="cursor: pointer;">Отправить заявку</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    
+        <!-- <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" /> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script> -->
+     
+        <meta charset="utf-8">
+    
+    
+    
+    
+            </div>
     
 </body>
 
