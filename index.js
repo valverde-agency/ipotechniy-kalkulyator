@@ -1,5 +1,4 @@
 jQuery(function() {
-
   //Ставка
   jQuery("#slider-range-max").slider({
     range: "max",
